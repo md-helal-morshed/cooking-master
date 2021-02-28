@@ -1,0 +1,47 @@
+body{
+    background-color: #EDD263;
+    
+}
+.container{
+    width: 80%;
+    margin: auto;
+    ;
+}
+nav{
+    background-color: none;
+}
+#search-area{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+#result-heading{
+    margin-top: 20px;
+    
+} 
+
+.heading-title{
+    text-align: center;
+    
+}
+
+
+.meals{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 20px;
+    
+}
+.meal{
+    margin: 5px;
+    cursor: pointer;
+    height: 400px;
+    width: 200px;
+ 
+    
+}
+.meal img{
+    width: 100%;
+    height: 50%;
+    border: 4px white solid;
+}
