@@ -29,6 +29,7 @@ function searchMeal() {
                 if (data.meals === null) {
                     resultHeading.innerHTML = `<p>There is no  result for '${term}':</p>`
                     meals.innerHTML = "";
+                    singleMeal.innerHTML ="";
                 }
                 else {
                     meals.innerHTML = data.meals.map(meal => `
@@ -76,6 +77,7 @@ function showSingleMeal(meal) {
         if (meal[`strIngredient${i}`]) {
             ingredients.push(` ${meal[`strIngredient${i}`]} - ${meal[`strMeasure${i}`]} `);
             meals.innerHTML = "";
+            resultHeading.innerHTML="";
             
         } else {
             break;
